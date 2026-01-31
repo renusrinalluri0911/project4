@@ -1,0 +1,118 @@
+/* Global app container */
+.app {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;          /* full screen height */
+  width: 100vw;               /* full screen width */
+  background: linear-gradient(135deg, #f0f4f8, #d9e4ec);
+  margin: 0;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* Profile section takes full width */
+.profile {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+  padding: 2rem;
+  width: 100%;                /* stretch full width */
+  margin-bottom: 2rem;
+}
+
+.profile img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 2rem;
+  border: 4px solid #4a90e2;
+}
+
+/* Info section inside profile */
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.name {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.role {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #4a90e2;
+}
+
+.bio {
+  font-size: 1rem;
+  color: #666;
+  max-width: 700px;
+}
+
+/* Buttons */
+button {
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.follow {
+  background: #4a90e2;
+  color: #fff;
+}
+
+.follow:hover {
+  background: #357ABD;
+}
+
+.message {
+  background: #f0f0f0;
+  color: #333;
+}
+
+.message:hover {
+  background: #ddd;
+}
+
+/* Status section spans full width */
+.status {
+  display: flex;
+  justify-content: space-evenly;   /* spread evenly across screen */
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+  padding: 2rem;
+  width: 100%;                     /* full width */
+}
+
+.status .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.value {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.label {
+  font-size: 1rem;
+  color: #777;
+  letter-spacing: 1px;
+}
